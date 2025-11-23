@@ -1,1 +1,21 @@
-<p>home works!</p>
+<div class="div-home">
+    <header>
+        <div class="div-container">
+            <div class="div-espaco">
+                <div class="div-botao-inicio">
+                    <button class="div-inicio" routerLink="/cadastro">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="Maquinas">
+            <h2>Maquinas</h2>
+            <div class="card">
+                <div *ngFor="let maquina of maquinas">
+                    <app-card-maquina [maquina]="maquina"></app-card-maquina>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
